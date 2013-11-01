@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>What's new in the Chrome DevTools - DevFest</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> -->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/app.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<!-- <slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo.png"></span>
+  </article>
+</slide>
+ -->
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Who am I?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>I'm a front-end web developer working at Shazam</li>
+<li>We're hiring for many engineering-based roles.</li>
+<li>"There is cake in the kitchen"</li>
+<li>GDE <img alt="gde badge" src="images/gde.png" /></li>
+</ul>
+<p><img alt="cake in office" src="images/cake.png" /></p></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Elements panel</h2>
+      <h3>Inspecting the DOM</h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="fill elements-panel-full-view nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Elements panel</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build fade">
+  <li>
+    <span class="slide-pre-code-list-item">
+    Viewing <span class="slide-font-information">font!</span> information in the computed pane
+    </span>
+    <pre class="prettyprint" data-lang="css">
+    span {
+      <b>font-family: 'Lily Script One', Arial, Cursive;</b>
+    }
+    </pre>
+  </li>
+  <li class="slide-force-element-state">Force element state indicators</li>
+  <li>Pseudo elements as their own nodes</li>
+  <li>Cmd + Click for Selectors, properties and their values</li>
+  <li>
+    Inspect Shadow DOM
+    <audio controls="controls">
+      <source src="audio/sample.mp3" type="audio/mp3">
+    </audio>
+  </li>
+
+</ul>
+
+<aside class="note">
+  <section>
+    <ul>
+      <li>$0.remove() for pseudo elements</li>
+    </ul>
+  </section>
+</aside>
+
+<footer class="source">
+  <a href="http://updates.html5rocks.com/2013/09/DevTools-answers-What-font-is-that">DevTools answers: What font is that?</a>
+</footer></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Resources</h2>
+      <h3>Persistent storage</h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="fill resources-panel-full-view nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Resources panel</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Cookies (clear them if needed)</li>
+<li>Application Cache (is a douchebag)</li>
+<li>Local &amp; Session storage</li>
+<li>Web SQL &amp; IndexedDB</li>
+</ul>
+<aside class="note">
+  <section>
+    <ul>
+      <li>Clearing cookies</li>
+      <li>Lily Script font preview</li>
+    </ul>
+  </section>
+</aside>
+
+<footer class="source">
+  <a href="https://speakerdeck.com/jaffathecake/application-cache-douchebag">Appcache: Douchebag</a>
+</footer></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Sources panel</h2>
+      <h3>Code editing</h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="fill sources-panel-full-view nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Sources panel</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build fade">
+  <li>Workspaces &amp; Code editing</li>
+  <li>Less Source Maps (<a href="http://umaar.github.io/bootstrap-source-map-example/">Bootstrap example</a>)</li>
+  <li>Snippets (<a href="https://github.com/bgrins/devtools-snippets/blob/master/snippets/allcolors/allcolors.js">Colours example</a>)</li>
+  <li>Local modifications</li>
+</ul>
+
+<aside class="note">
+  <section>
+    <ul>
+      <li>Cmd + o for custom.css will = 2 results: map to network resource.</li>
+      <li>project search: todo, ignore node_modules</li>
+      <li>red.css: &lt;link href="theme/css/red.css" rel="stylesheet"/&gt;</li>
+      <li>Possible need to 'Save as' for a file so DevTools has write permission.</li>
+      <li>Cmd + / = unchecked style in styles pane</li>
+      <li>brace matching, keyword matching based on selected text. Styles panel -> sources panel.  </li>
+      <li>CSS pretty print.</li>
+      <li>Increment val in sources.</li>
+    </ul>
+  </section>
+</aside></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Layers panel</h2>
+      <h3>Layer promotion</h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="fill layers-panel-full-view nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Layers panel</h2>
+      <h3>What is a layer?</h3>
+    </hgroup>
+    <article ><ul class="build fade">
+  <li>A portion of the page uploaded to the GPU for compositing.</li>
+  <li>Reasons include:</li>
+  <ul>
+    <li>3D/perspective CSS properties</li>
+    <li>Certain video/canvas elements</li>
+    <li>A few more which can change at any time</li>
+  </ul>
+</ul>
+
+<aside class="note">
+  <section>
+    <ul>
+      <li><a href="http://www.webkit.org/blog-files/3d-transforms/poster-circle.html">Nice layers demonstration</a></li>
+      <li>Beware of putting too many things into layers - this eats up graphics memory</li>
+      <li><a href="http://codepen.io/ariya/full/xuwgy">CodePen demo</a></li>
+    </ul>
+  </section>
+</aside></article>
+ 
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Layers panel continued</h2>
+      <h3>How to use the Layers panel</h3>
+    </hgroup>
+    <article ><ul class="build fade">
+  <li>Currently an <strong>experimental feature</strong>.</li>
+  <li class="slide-layer-promotion">I should be promoted to a layer.</li>
+  <li>Element dimensions, memory estimates, reasons for compositing and more.</li>
+  <li>Show composited layer borders</li>
+</ul>
+
+<aside class="note">
+  <section>
+    <ul>
+      <li>Show composited layer borders is a simplistic view of the layers panel</li>
+    </ul>
+  </section>
+</aside></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Extra bits</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>A few extra bits and pieces to quickly touch upon:</p>
+<ul>
+<li>Flamecharts</li>
+<li>Timeline panel</li>
+<li>New column headers in the network panel</li>
+<li>getEventListeners(document.body)</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Before &amp; after reaction of discovering new DevTools features</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><article class="flexbox vcenter">
+<div class="slide-before-after-container">
+<div class="slide-before-after-reaction">
+  <h3>Before</h3>
+  <img src="images/gifs/screencasting-realisation-before.gif" alt="Before discovery">
+</div>
+
+<div class="slide-before-after-reaction">
+  <h3>After</h3>
+  <img src="images/gifs/screencasting-realisation-after.gif" alt="After discovery">
+</div>
+</div>
+</article></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Elements panel: recap</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="elements recap 1" src="images/elements-1.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Elements panel: recap</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="elements recap 2" src="images/elements-2.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Resources panel: recap</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="Resources recap 1" src="images/resources-1.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Sources panel: recap</h2>
+      <h3>Create and edit new files</h3>
+    </hgroup>
+    <article ><video class="slide-video" src="videos/workspaces-new-file.mp4" loop="true" autoplay="true"></video></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Sources panel: recap</h2>
+      <h3>Commented out styles: toggled off in Styles & persisted to disk</h3>
+    </hgroup>
+    <article ><video class="slide-video medium-video" src="videos/sources-commenting.mp4" loop="true" autoplay="true"></video></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Sources panel: recap</h2>
+      <h3>Pretty print minified CSS and JavaScript</h3>
+    </hgroup>
+    <article ><video class="slide-video medium-video" src="videos/source-css-pretty-print.webm" loop="true" autoplay="true"></video></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Sources panel: recap</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="Sources recap 1" src="images/sources-1.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Layers panel: recap</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><video class="slide-video" src="videos/layers-panel.mp4" loop="true" autoplay="true"></video></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Layers panel panel: recap</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="Layers panel recap 1" src="images/layers-1.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Layers panel: recap</h2>
+      <h3><a href="http://grooveshark.com/#!/popular">Grooveshark example</a></h3>
+    </hgroup>
+    <article ><p><button onclick="document.getElementById('gs-rotationContainer').classList.toggle('gs-rotated');">Twist</button></p>
+<div id="gs-perspectiveContainer">
+  <div id="gs-rotationContainer">
+    <div id="gs-viewport">
+      <div class="blueborder"></div>
+    </div>
+    <img id="gs-header" src="images/layers/gs-topbar.png">
+    <img id="gs-sticky-header" src="images/layers/gs-sticky-header.png">
+    <img id="gs-main" style="" src="images/layers/gs-main.png">
+    <img id="gs-sidebar" src="images/layers/gs-sidebar.png">
+    <img id="gs-footer" src="images/layers/gs-footer.png">
+  </div>
+</div></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+  <article class="flexbox  auto-fadein">
+    <img class="goodbye-gif" src="images/gifs/thanks-and-bye.gif" alt="Goodbye">
+    <h2>Thank you.</h2>
+  </article>
+  <p class="auto-fadein" data-config-contact>
+    <!-- populated from slide_config.json -->
+  </p>
+</slide>
+
+<!-- <slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo_white.png"></span>
+  </article>
+</slide> -->
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-31819122-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
