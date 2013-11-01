@@ -1,5 +1,7 @@
 # Slides for DevFest London 2013 on the Chrome DevTools
 
+### Because of some media, these slides are like, 20mb+ so watch out mobile data usage!
+
 `npm install && grunt`
 
 Then browser to `127.0.0.1:8911`.
